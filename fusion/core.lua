@@ -103,8 +103,12 @@ end)
 
 RunService.RenderStepped:Connect(updateAimAssist)
 
+local function clean
+    game.Players.LocalPlayer:Kick("You have left the game.")
+end
+
 createButton("ESPButton", UDim2.new(0.1, 0, 0.1, 0), "ESP", updateHighlights)
-createButton("AimAssistButton", UDim2.new(0.1, 0, 0.25, 0), "AIM", toggleAimAssist)
-createButton("Button3", UDim2.new(0.1, 0, 0.4, 0), "Button 3", function() print("Button 3 Action") end)
+createButton("AimAssistButton", UDim2.new(0.1, 0, 0.25, 0), "Aim Assist", toggleAimAssist)
+createButton("CleanButton", UDim2.new(0.1, 0, 0.4, 0), "Quick Leave", clean)
 createButton("Button4", UDim2.new(0.1, 0, 0.55, 0), "Button 4", function() print("Button 4 Action") end)
 createButton("Button5", UDim2.new(0.1, 0, 0.7, 0), "Button 5", function() print("Button 5 Action") end)
