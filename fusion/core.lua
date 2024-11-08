@@ -104,7 +104,7 @@ end)
 RunService.RenderStepped:Connect(updateAimAssist)
 
 local function clean
-    game.Players.LocalPlayer:Kick("You have left the game.")
+    game.Players.LocalPlayer:Kick("Fusion Quick Leave")
 end
 
 createButton("ESPButton", UDim2.new(0.1, 0, 0.1, 0), "ESP", updateHighlights)
