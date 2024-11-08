@@ -1,9 +1,9 @@
-if game.CoreGui:FindFirstChild("Fusion") then
-    game.CoreGui:FindFirstChild("Fusion"):Destroy()
+if game.CoreGui:FindFirstChild("FusionU") then
+    game.CoreGui:FindFirstChild("FusionU"):Destroy()
 end
 
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "Fusion"
+screenGui.Name = "FusionU"
 screenGui.Parent = game.CoreGui
 
 local function createButton(name, position, text, callback)
@@ -15,26 +15,6 @@ local function createButton(name, position, text, callback)
     button.Text = text
     button.Parent = screenGui
     button.MouseButton1Click:Connect(callback)
-end
-
-local function espac()
-    print("Button 1 clicked")
-end
-
-local function button2Action()
-    print("Button 2 clicked")
-end
-
-local function button3Action()
-    print("Button 3 clicked")
-end
-
-local function button4Action()
-    print("Button 4 clicked")
-end
-
-local function button5Action()
-    print("Button 5 clicked")
 end
 
 createButton("espbt", UDim2.new(0.1, 0, 0.1, 0), "ESP", espac)
